@@ -1,0 +1,43 @@
+extends admin
+
+block content
+  .container
+    h2 Vertical (basic) form
+    |   
+    form( method='post', action='/admin/new' enctype="multipart/form-data")
+      .form-group
+        label(for="email") Email:
+        |       
+        input#email.form-control(type="text", placeholder="Enter email")
+      |     
+      .form-group
+        label(for="description") Description:
+        |       
+        input#description.form-control(type="text")
+      |     
+      .form-group
+        label(for="service") Service:
+        |       
+        input#service.form-control(type="text")
+      |     
+      .form-group
+        label(for="client") Client:
+        |       
+        input#client.form-control(type="text")
+      |     
+      .form-group
+        label(for="email") Email:
+        |       
+        input#email.form-control(type="text", placeholder="Enter email")
+      |     
+      .form-group
+        label(for="image") Project Image:
+        |       
+        input#image.form-control(type="file")
+      |     
+      .form-group
+        label(for="date") Date:
+        |       
+        input#date.form-control(type="date")
+      |     
+      button.btn.btn-default(type="submit") Submit
